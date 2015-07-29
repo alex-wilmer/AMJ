@@ -3,6 +3,7 @@ var gulp = require('gulp')
   , nib = require('nib')
   , rupture = require('rupture')
   , jade = require('gulp-jade')
+  , babel = require('gulp-babel')
 
 gulp.task('stylus', function () {
   return gulp.src('src/styl/index.styl')
@@ -16,9 +17,17 @@ gulp.task('jade', function () {
     .pipe(gulp.dest('dest'))
 })
 
+gulp.task('babel', function () {
+  return gulp.src('src/js/events.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dest/js'))
+})
+
 gulp.task('watch', function () {
   gulp.watch('src/styl/index.styl', ['stylus'])
   gulp.watch('src/index.jade', ['jade'])
+  gulp.watch('src/templates/*.jade', ['jade'])
+  gulp.watch('src/js/events.js', ['babel'])
 })
 
-gulp.task('default', ['watch', 'stylus', 'jade'])
+gulp.task('default', ['watch', 'stylus', 'jade', 'babel'])

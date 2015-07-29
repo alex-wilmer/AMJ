@@ -1,18 +1,3 @@
-.row {
-  zoom: 1;
-}
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
-}
-.max {
-  max-width: 1024px;
-  margin: 0 auto;
-}
 html,
 body,
 div,
@@ -104,6 +89,108 @@ td {
 a img {
   border: none;
 }
+.row {
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.max {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.btn {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  text-align: center;
+  color: #006ca8;
+  border: 3px solid;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 7px;
+  font-size: 1.2em;
+  font-weight: 100;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: #fff;
+  background: #006ca8;
+}
+@media only screen and (min-width: 1000px) {
+  .btn {
+    margin-top: 50px;
+  }
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #1b9eda;
+  color: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  font-weight: 100;
+  padding: 20px;
+  overflow-y: auto;
+}
+.overlay * + * {
+  margin-top: 8px;
+}
+.overlay .office + .office {
+  margin-top: 20px;
+}
+.overlay a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.overlay.opaque {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.overlay.above {
+  z-index: 2;
+}
+.overlay h1 {
+  font-size: 2em;
+}
+.overlay h2 {
+  font-size: 1.5em;
+}
+.overlay h3 {
+  font-size: 1.2em;
+}
+.overlay .fa-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 2em;
+  z-index: 2;
+}
+.overlay .fa-close:hover {
+  color: #cdcdcd;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -161,12 +248,22 @@ main .logo {
   background: #1b9eda;
 }
 .top-card .logo {
-  top: 70%;
-  -webkit-transform: translateY(-70%);
-  -moz-transform: translateY(-70%);
-  -o-transform: translateY(-70%);
-  -ms-transform: translateY(-70%);
-  transform: translateY(-70%);
+  top: 90%;
+  -webkit-transform: translateY(-90%);
+  -moz-transform: translateY(-90%);
+  -o-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-90%);
+}
+@media only screen and (min-width: 1000px) {
+  .top-card .logo {
+    top: 75%;
+    -webkit-transform: translateY(-75%);
+    -moz-transform: translateY(-75%);
+    -o-transform: translateY(-75%);
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
 }
 .text-card {
   height: auto;

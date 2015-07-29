@@ -11,6 +11,10 @@ html
     link(href="css/index.css" rel="stylesheet")
       
   body
+    .overlay
+      i.showOffices.fa.fa-close
+      include templates/offices.jade
+    
     .white-box
       img(src="img/ev-logo.png")
     img.cubes(src="img/cubes.svg")
@@ -56,8 +60,13 @@ html
         .max
           img.logo(src="img/we-load.svg")
     
+    a.showOffices.btn Show Participating Offices
+    
     footer   
       img(src="img/ev-logo.png")
       .slogan
         span.text BROUGHT TO YOU BY
         img.logo(src="img/amj-logo.gif")
+          
+    script(src="//code.jquery.com/jquery-1.11.3.min.js")
+    script(src="js/events.js")

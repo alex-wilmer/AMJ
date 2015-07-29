@@ -76,14 +76,18 @@ maxWidth = 1024px
 
   .fa-close
     position fixed
-    top 10px
-    right 10px
+    top 12px
+    right 12px
     cursor pointer
     font-size 2em
     z-index 2
 
     &:hover
       color white - 50
+
+    +above(1000px)
+      top 20px
+      right 20px
 
 *
   box-sizing border-box

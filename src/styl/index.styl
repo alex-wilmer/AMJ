@@ -1,4 +1,45 @@
 @import 'nib'
 @import 'rupture'
 
+mainBlue = #1B9EDA
+maxWidth = 1024px
+
+.max
+  max-width maxWidth
+  margin 0 auto
+
 global-reset()
+
+*
+  box-sizing border-box
+
+html,
+body
+  height 100%
+
+body
+  background mainBlue
+  overflow-x hidden
+
+main
+  height 100%
+  padding 20px
+
+  & > div
+    height 100%
+
+  .cubes
+    position absolute
+
+  .logo
+    position relative
+    z-index 1
+    top 50%
+    transform translateY(-50%)
+    width 75vw
+
+    +above(400px)
+      width 320px
+
+.card-2
+  background white

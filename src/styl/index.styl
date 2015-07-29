@@ -16,10 +16,19 @@ global-reset()
 html,
 body
   height 100%
+  font-family 'Roboto', sans-serif
 
 body
   background mainBlue
   overflow-x hidden
+
+.cubes
+  position absolute
+  top 20px
+  right 20px
+
+  +above(600px)
+    max-width 600px
 
 main
   height 100%
@@ -28,18 +37,33 @@ main
   & > div
     height 100%
 
-  .cubes
-    position absolute
-
   .logo
     position relative
     z-index 1
     top 50%
     transform translateY(-50%)
-    width 75vw
+    width 60vw
 
     +above(400px)
-      width 320px
+      width 240px
 
 .card-2
   background white
+
+footer
+  background white
+  text-align center
+
+  .slogan
+    color #939598
+    word-spacing 1.1em
+    font-size 0.9em
+    padding 15px
+
+    .text
+      position relative
+      top -10px
+
+    .logo
+      height 40px
+      margin-left 15px

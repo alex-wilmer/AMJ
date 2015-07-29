@@ -101,10 +101,21 @@ a img {
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: #1b9eda;
   overflow-x: hidden;
+}
+.cubes {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media only screen and (min-width: 600px) {
+  .cubes {
+    max-width: 600px;
+  }
 }
 main {
   height: 100%;
@@ -112,9 +123,6 @@ main {
 }
 main > div {
   height: 100%;
-}
-main .cubes {
-  position: absolute;
 }
 main .logo {
   position: relative;
@@ -125,13 +133,31 @@ main .logo {
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 75vw;
+  width: 60vw;
 }
 @media only screen and (min-width: 400px) {
   main .logo {
-    width: 320px;
+    width: 240px;
   }
 }
 .card-2 {
   background: #fff;
+}
+footer {
+  background: #fff;
+  text-align: center;
+}
+footer .slogan {
+  color: #939598;
+  word-spacing: 1.1em;
+  font-size: 0.9em;
+  padding: 15px;
+}
+footer .slogan .text {
+  position: relative;
+  top: -10px;
+}
+footer .slogan .logo {
+  height: 40px;
+  margin-left: 15px;
 }

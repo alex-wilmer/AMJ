@@ -14,7 +14,7 @@
       } else {
         overlay.removeClass('opaque');
         setTimeout(function () {
-          body.css('overflow-y', 'auto');
+          body.css('overflow-y', 'overlay');
           overlay.removeClass('above');
           open = false;
         }, 300);

@@ -150,7 +150,7 @@ a img {
   z-index: -1;
   font-weight: 100;
   padding: 20px;
-  overflow-y: auto;
+  overflow-y: overlay;
 }
 .overlay * + * {
   margin-top: 8px;

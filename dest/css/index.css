@@ -162,6 +162,7 @@ a img {
   text-decoration: none;
   color: #fff;
   display: block;
+  max-width: 300px;
 }
 .overlay.opaque {
   opacity: 1;
@@ -194,7 +195,7 @@ a img {
 @media only screen and (min-width: 1000px) {
   .overlay .fa-close {
     top: 20px;
-    right: 20px;
+    right: 35px;
   }
 }
 * {

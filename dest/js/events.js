@@ -13,8 +13,8 @@
         open = true;
       } else {
         overlay.removeClass('opaque');
-        body.css('overflow-y', 'initial');
         setTimeout(function () {
+          body.css('overflow-y', 'initial');
           overlay.removeClass('above');
           open = false;
         }, 300);

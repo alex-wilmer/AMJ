@@ -14,8 +14,8 @@
 
         else {
           overlay.removeClass('opaque')
-          body.css(`overflow-y`, `initial`)
           setTimeout(() => {
+            body.css(`overflow-y`, `initial`)
             overlay.removeClass('above')
             open = false
           }, 300)

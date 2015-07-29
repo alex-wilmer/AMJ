@@ -234,20 +234,20 @@ body {
     max-width: 600px;
   }
 }
-main {
+.main {
   height: 100%;
   padding: 20px;
 }
-main > div {
+.main > div {
   height: 100%;
 }
-main .logo {
+.main .logo {
   position: relative;
   z-index: 1;
   width: 60vw;
 }
 @media only screen and (min-width: 400px) {
-  main .logo {
+  .main .logo {
     width: 240px;
   }
 }
@@ -255,12 +255,12 @@ main .logo {
   background: #1b9eda;
 }
 .top-card .logo {
-  top: 90%;
-  -webkit-transform: translateY(-90%);
-  -moz-transform: translateY(-90%);
-  -o-transform: translateY(-90%);
-  -ms-transform: translateY(-90%);
-  transform: translateY(-90%);
+  top: 98%;
+  -webkit-transform: translateY(-98%);
+  -moz-transform: translateY(-98%);
+  -o-transform: translateY(-98%);
+  -ms-transform: translateY(-98%);
+  transform: translateY(-98%);
 }
 @media only screen and (min-width: 1000px) {
   .top-card .logo {

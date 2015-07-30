@@ -234,6 +234,26 @@ body {
     max-width: 600px;
   }
 }
+.trucks {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 1315px) {
+  .trucks img:first-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 905px) {
+  .trucks img:not(:last-child) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .trucks img {
+    display: none;
+  }
+}
 .main {
   height: 100%;
   padding: 20px;

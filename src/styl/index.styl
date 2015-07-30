@@ -121,6 +121,23 @@ body
   +above(600px)
     max-width 600px
 
+.trucks
+  position absolute
+  bottom 0
+  right 0
+
+  +below(1315px)
+    img:first-child
+      display none
+
+  +below(905px)
+    img:not(:last-child)
+      display none
+
+  +below(580px)
+    img
+      display none
+
 .main
   height 100%
   padding 20px
